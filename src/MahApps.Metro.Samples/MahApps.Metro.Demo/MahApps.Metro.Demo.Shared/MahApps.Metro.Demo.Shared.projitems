@@ -9,6 +9,7 @@
     <Import_RootNamespace>MetroDemo</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="**\*.xaml.cs" SubType="Code" DependentUpon="%(Filename)" />
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -83,8 +84,6 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\AlbumPriceIsTooMuchConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\Int32IndexToNumberConverter.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
