@@ -9,7 +9,7 @@
     <Import_RootNamespace>MetroDemo</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="**\*.xaml.cs" SubType="Code" DependentUpon="%(Filename)" />
+    <!-- <Compile Update="**\*.xaml.cs" SubType="Code" DependentUpon="%(Filename)" /> -->
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
